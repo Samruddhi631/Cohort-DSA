@@ -187,6 +187,7 @@
 // console.log(sMin)
 
 // reverse the array
+
 // let arr=[1,2,3,4,5,6]
 // let cp=new Array(arr.length)
 // let i=0
@@ -195,6 +196,8 @@
 //     i++
 // }
 // console.log(cp)
+
+// scond approach to reverse the 
 
 // let arr=[1,2,3,4,5,6]
 // let i=0;
@@ -209,10 +212,12 @@
 // }
 // console.log(arr)
 
+// all zeros to left and all ones's to right
+
 // let arr=[0,1,1,0,0,1,0]
 // let i=0
-// let j=arr.length-1
-// while(i<=arr.length-1){
+// let j=0
+// while(i<arr.length){
 //     if(arr[i]==0){
 //         let temp= arr[j]
 //         arr[j]=arr[i]
@@ -223,10 +228,126 @@
 // }
 // console.log(arr)
 
-let arr=[1,2,3,4,5,6]
-let cp=arr[0]
-for (let i=0;i<arr.length-1;i++){
-    arr[i]=arr[i+1];
-}
-arr[arr.length-1]=cp
-console.log(arr)
+// shif array element to left by 1
+
+// let arr=[1,2,3,4,5,6]
+// let cp=arr[0]
+// for (let i=0;i<arr.length-1;i++){
+//     arr[i]=arr[i+1];
+// }
+// arr[arr.length-1]=cp
+// console.log(arr)
+
+// shif array element to right by 1
+
+// let arr=[1,2,3,4,5,6]
+// let cp=arr[arr.length-1]
+// for(let i=arr.length-1;i>=1;i--){
+//     arr[i]=arr[i-1];
+// }
+// arr[0]=cp
+// console.log(arr)
+
+// shift array elemet to left by 2
+
+// let arr=[1,2,3,4,5,6]
+// let k=7
+// k=k%arr.length
+// for(let j=1;j<=k;j++)
+//     {let cp=arr[0]
+// for (let i=0;i<arr.length-1;i++){
+//     arr[i]=arr[i+1];
+// }
+// arr[arr.length-1]=cp
+// }
+// console.log(arr)
+
+// second approach to shift array element to left by 2 with On
+
+// let arr=[1,2,3,4,5,6];
+// let temp=new Array(arr.length);
+// let k=2
+// for(let i=0;i<=arr.length-1;i++){
+//     temp[i]=arr[(i+k)%arr.length];
+// }
+// console.log(temp)
+
+// third approach to shift array element to left by 2 without extra space
+// let prompt=require("prompt-sync")()
+// let arr=[1,2,3,4,5,6,];
+// let k=Number(prompt('Enter number:'))
+// reverse(arr,0,k-1);
+// reverse(arr,k,arr.length-1)
+// reverse(arr,0,arr.length-1)
+// console.log(arr)
+// function reverse(arr,i,j){
+//     while(i<j){
+//         let temp=arr[i]
+//         arr[i]=arr[j]
+//         arr[j]=temp
+//         i++;
+//         j--;
+//     }
+// }
+// in array of 0's and 1's move all 0's in an array at the end
+
+    // let arr=[0,1,1,0,1,1,0]
+    // let cp=[]
+    // for(let i=0;i<=arr.length;i++){
+    //     if(arr[i]==1){
+    //        cp.push(1)
+    //     }
+    // }
+    // for(let i=cp.length;i<arr.length;i++){
+    //    cp.push(0)
+    // }
+    // console.log(cp);
+
+// move all 0's in an array without using extra space
+    // let arr=[0,1,0,1,1,0]
+    // let i=0;
+    // let j=0;
+    // while(j<=arr.length-1){
+    //     if(arr[j]==1){
+    //         let temp=arr[j];
+    //         arr[j]=arr[i];
+    //         arr[i]=temp;
+    //         i++
+    //     }
+    //     j++
+    // }
+    // console.log (arr)
+
+    
+// linear search
+
+// let arr=[24,56,78,9,10]
+// let target=78;
+// let index=-1;
+//     for(let i=0;i<=arr.length-1;i++){
+//         if(arr[i]==target){
+//             index=i
+//             break;
+//         }
+//     }
+//     if (index==-1) console.log('Element not found')
+//     else console.log("element found at index:"+index)
+
+// Binary search
+
+// let arr=[10,45,69,84,100,150,200]
+// let target=150;
+// if(binarySearch(arr,target)==-1) console.log("Element not found")
+// else console.log("Element found")
+// function binarySearch(arr,target){
+//     let s=0;
+//     let e= arr.length-1;
+//     while(s<=e){
+//         let mid=s+(e-s)/2;
+//         if(arr[mid]==target) return mid;
+//         else if(arr[mid]>target) e=mid-1;
+//         else s=mid+1;
+//     }
+//     return -1
+// }
+
