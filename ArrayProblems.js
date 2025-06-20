@@ -335,19 +335,27 @@
 
 // Binary search
 
-// let arr=[10,45,69,84,100,150,200]
-// let target=150;
-// if(binarySearch(arr,target)==-1) console.log("Element not found")
-// else console.log("Element found")
-// function binarySearch(arr,target){
-//     let s=0;
-//     let e= arr.length-1;
-//     while(s<=e){
-//         let mid=s+(e-s)/2;
-//         if(arr[mid]==target) return mid;
-//         else if(arr[mid]>target) e=mid-1;
-//         else s=mid+1;
-//     }
-//     return -1
-// }
+let arr=[10,45,69,84,100,150,200]
+let target=150;
+let found=binarySearch(arr,target)
+if(found==-1) console.log("Element not found")
+else console.log("Element found at index:",found)
+function binarySearch(arr,target){
+    let s=0;
+    let e= arr.length-1;
+    while(s<=e){
+        let mid=s+(e-s)/2;
+        if(arr[mid]==target) {
+            return mid;
+            break;
+        }
+        else if(arr[mid]>target) {
+            e=mid-1;
+        }
+        else {
+            s=mid+1;
+        }
+    }
+    return -1
+}
 
