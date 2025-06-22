@@ -101,58 +101,6 @@
 // }
 // console.log(noteCount(4327));
 
-//  let n=5
-//   for(let i=1;i<=n;i++){
-//         for(let j=1;j<=n-i;j++){
-//             process.stdout.write("  ")
-//         }
-//         for(let j=1;j<=i;j++){
-//             process.stdout.write(" *")
-//         }
-
-//         console.log();
-//     }
-  
-//   let n=4;
-//   for(let i=1;i<=n;i++){
-//         for(let j=1;j<=n;j++){
-//             if(i===j||i+j===n+1){
-//                 process.stdout.write("* ")
-//             }else  process.stdout.write("  ")
-//     }
-//     console.log()
-//     }
-    
-// let n=5
-// for(let i=1;i<=n;i++){
-//     for(let j=1;j<=(n*2)-1;j++){
-//         if(i===j||i+j===n*2){
-//             process.stdout.write("*")
-//         }else process.stdout.write(" ")
-//     }
-//     console.log()
-// }
-
-// let n=5
-// for(let i=1;i<=n;i++){
-//     for(let j=1;j<=(n*2)-1;j++){
-//         if(i+j===n+1||j===n-1+i){
-//             process.stdout.write("*")
-//         }else process.stdout.write(" ")
-//     }
-//     console.log();
-// }
-
-// let n=5;
-//   for(let i=1;i<=n;i++){
-//         for(let j=1;j<=n;j++){
-//             if(i===j||i+j===n+1||j==1||j==5){
-//                 process.stdout.write("*")
-//             }else  process.stdout.write("  ")
-//     }
-//     console.log()
-//     }
-
 // let arr=[10,20,30,40,50];
 // arr.push(100);
 // arr.unshift(100);
@@ -335,27 +283,27 @@
 
 // Binary search
 
-let arr=[10,45,69,84,100,150,200]
-let target=150;
-let found=binarySearch(arr,target)
-if(found==-1) console.log("Element not found")
-else console.log("Element found at index:",found)
-function binarySearch(arr,target){
-    let s=0;
-    let e= arr.length-1;
-    while(s<=e){
-        let mid=s+(e-s)/2;
-        if(arr[mid]==target) {
-            return mid;
-            break;
-        }
-        else if(arr[mid]>target) {
-            e=mid-1;
-        }
-        else {
-            s=mid+1;
-        }
-    }
-    return -1
-}
+// let arr=[10,45,69,84,100,150,200]
+// let target=150;
+// let found=binarySearch(arr,target)
+// if(found==-1) console.log("Element not found")
+// else console.log("Element found at index:",found)
+// function binarySearch(arr,target){
+//     let s=0;
+//     let e= arr.length-1;
+//     while(s<=e){
+//         let mid=s+(e-s)/2;
+//         if(arr[mid]==target) {
+//             return mid;
+//             break;
+//         }
+//         else if(arr[mid]>target) {
+//             e=mid-1;
+//         }
+//         else {
+//             s=mid+1;
+//         }
+//     }
+//     return -1
+// }
 
