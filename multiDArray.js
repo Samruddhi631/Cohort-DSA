@@ -46,27 +46,89 @@
 
 // Image Rotation
 
+// let arr=[
+//     [1,2,3],
+//     [5,6,7],
+//     [9,10,11]
+// ]
+// for(let i=0;i<=arr.length-1;i++){
+//     for(let j=i;j<=arr.length-1;j++){
+//         let temp=arr[i][j]
+//         arr[i][j]=arr[j][i]
+//         arr[j][i]=temp
+//     }
+// }
+// for(let i=0;i<=arr.length-1;i++){
+//     let k=0;
+//     let j=arr[0].length-1;
+//     while(k<j){
+//         let temp=arr[i][k];
+//         arr[i][k]=arr[i][j];
+//         arr[i][j]=temp
+//         k++
+//         j--
+//     }
+// }
+// console.log(arr)
+
+// Spiral Matrix
+
+// let arr=[
+//     [1,2,3],
+//     [5,6,7],
+//     [9,10,11]
+// ]
+
+// let total=arr.length*arr[0].length
+// let ans=[];
+// let minc=0
+// let maxc=arr[0].length-1
+// let minr=0
+// let maxr=arr.length-1;
+// while(minr<=maxr&&minc<=maxc){
+//     for(let i=minc;i<=maxc;i++){
+//         ans.push(arr[minr][i])
+//     }
+//     minr++;
+//     for (let i=minr;i<=maxr;i++){
+//         ans.push(arr[i][maxc])
+//     }
+//     maxc--;
+//     for(let i=maxc;i>=minc;i--){
+//         ans.push(arr[maxr][i])
+//     }
+//     maxr--;
+//     for(let i=maxr;i>=minr;i--){
+//         ans.push(arr[i][minc])
+//     }
+//     minc++;
+// }
+// console.log(ans)
+
+// Flipping  image
+
 let arr=[
-    [1,2,3],
-    [5,6,7],
-    [9,10,11]
+    [0,1,0],
+    [1,1,0],
+    [0,1,1]
 ]
-for(let i=0;i<=arr.length-1;i++){
-    for(let j=i;j<=arr.length-1;j++){
-        let temp=arr[i][j]
-        arr[i][j]=arr[j][i]
-        arr[j][i]=temp
-    }
-}
-for(let i=0;i<=arr.length-1;i++){
+for (let i=0;i<=arr.length-1;i++){
     let k=0;
     let j=arr[0].length-1;
     while(k<j){
-        let temp=arr[i][k];
-        arr[i][k]=arr[i][j];
+        let temp=arr[i][k]
+        arr[i][k]=arr[i][j]
         arr[i][j]=temp
         k++
         j--
+    }
+    for(let j=0;j<arr[0].length;j++){
+        if (arr[i][j] === 0) {
+            arr[i][j] = 1;
+        } 
+        else {
+            arr[i][j] = 0;
+        }
     }
 }
 console.log(arr)
