@@ -30,15 +30,43 @@
 // console.log(arr);
 
 // transpose matrix
-let matrix=[
-    [1,2,3,4],
-    [5,6,7,8],
-    [9,10,11,12]
+
+// let matrix=[
+//     [1,2,3,4],
+//     [5,6,7,8],
+//     [9,10,11,12]
+// ]
+//  let ans= Array.from({length:matrix[0].length},()=> Array(matrix.length))
+//     for (let i=0;i<ans.length;i++){
+//         for(let j=0;j<ans[i].length;j++){
+//             ans[i][j]=matrix[j][i]
+//         }
+//     }
+//     console.log(ans);
+
+// Image Rotation
+
+let arr=[
+    [1,2,3],
+    [5,6,7],
+    [9,10,11]
 ]
- let ans= Array.from({length:matrix[0].length},()=> Array(matrix.length))
-    for (let i=0;i<ans.length;i++){
-        for(let j=0;j<ans[i].length;j++){
-            ans[i][j]=matrix[j][i]
-        }
+for(let i=0;i<=arr.length-1;i++){
+    for(let j=i;j<=arr.length-1;j++){
+        let temp=arr[i][j]
+        arr[i][j]=arr[j][i]
+        arr[j][i]=temp
     }
-    console.log(ans);
+}
+for(let i=0;i<=arr.length-1;i++){
+    let k=0;
+    let j=arr[0].length-1;
+    while(k<j){
+        let temp=arr[i][k];
+        arr[i][k]=arr[i][j];
+        arr[i][j]=temp
+        k++
+        j--
+    }
+}
+console.log(arr)

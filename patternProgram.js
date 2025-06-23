@@ -1,4 +1,4 @@
-// Right angle triangle
+// Right side Right angle triangle
 
 // let n=5
 //   for(let i=1;i<=n;i++){
