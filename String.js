@@ -44,7 +44,7 @@
 // console.log()
 // 17. trim() - Removes spaces from both sides
 // s="    Sheriyans   "
-// console.log(s,trim())
+// console.log(s.trim())
 
 // reverse a string
 
@@ -91,18 +91,61 @@
 
 // capitalize first and last charcter of word in a string
 
-let str="hello bhai kya hal chal"
-let arr=str.split(" ")
-let ans=""
-for(let i=0;i<=arr.length-1;i++){
-    let word =arr[i];
-    if(word.length<=2) {
-        ans=ans+word.toUpperCase()+" ";
-    }
-    else{
-        ans=ans+word.charAt(0).toUpperCase()+
-        word.substring(1,word.length-1)+
-        word.charAt(word.length-1).toUpperCase()+" ";
-    }
-}
-console.log(ans)
+// let str="hello bhai kya hal chal"
+// let arr=str.split(" ")
+// let ans=""
+// for(let i=0;i<=arr.length-1;i++){
+//     let word =arr[i];
+//     if(word.length<=2) {
+//         ans=ans+word.toUpperCase()+" ";
+//     }
+//     else{
+//         ans=ans+word.charAt(0).toUpperCase()+
+//         word.substring(1,word.length-1)+
+//         word.charAt(word.length-1).toUpperCase()+" ";
+//     }
+// }
+// console.log(ans)
+
+// print the frequency of each character in a string
+
+// let s="aabba a87645A bBBcdefg"
+// let freqArr=new Array(123).fill(0);
+// for(let i=0;i<=s.length-1;i++){
+//     let asci=s.charCodeAt(i)
+//     freqArr[asci]=freqArr[asci]+1;
+// }
+// for(let i=0;i<=freqArr.length-1;i++){
+//     if(freqArr[i]>0){
+//         console.log(String.fromCharCode(i)+"->"+freqArr[i])
+//     }
+// }
+
+// check if two strings are anagram or not
+
+// let str1="state";
+// let str2="taste";
+// let freqArr=new Array(123).fill(0);
+
+// if(str1.length !=str2.length){
+//     console.log("The two strings are not an Anagram");
+// }
+// else{
+//     let isAnagram=true;
+//     for (let i=0;i<=str1.length-1;i++){
+//     let asci=str1.charCodeAt(i);
+//     freqArr[asci]=freqArr[asci]+1;
+// }
+// for (let i=0;i<=str2.length-1;i++){
+//     let asci=str2.charCodeAt(i);
+//     freqArr[asci]=freqArr[asci]-1;
+// }
+// for(let i=0;i<=freqArr.length-1;i++){
+//     if (freqArr[i]!=0){
+//         isAnagram=false;
+//         break;
+//     }
+// }
+// if(isAnagram) console.log("The two strings are Anagram");
+//     else console.log("The two strings are not Anagram");
+// }
