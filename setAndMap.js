@@ -122,15 +122,15 @@
 
 // sort the people by height in decending order
 
-let names=["bob","alice","chroma"]
-let heights=[165,180,175]
-let map=new Map();
-    for(let i=0;i<=names.length-1;i++){
-        map.set(heights[i],names[i])
-    }
-    heights.sort((a,b)=>b-a);
-    let ans=new Array(names.length);
-    for(let i=0;i<=heights.length-1;i++){
-        ans[i]=map.get(heights[i])
-    }
-    console.log(ans)
+// let names=["bob","alice","chroma"]
+// let heights=[165,180,175]
+// let map=new Map();
+//     for(let i=0;i<=names.length-1;i++){
+//         map.set(heights[i],names[i])
+//     }
+//     heights.sort((a,b)=>b-a);
+//     let ans=new Array(names.length);
+//     for(let i=0;i<=heights.length-1;i++){
+//         ans[i]=map.get(heights[i])
+//     }
+//     console.log(ans)
