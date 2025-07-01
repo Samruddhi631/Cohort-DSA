@@ -14,7 +14,7 @@
 
 // check if the number  is power of 2
 
-// let prompt=require("prompt-sync")()
-// let n=Number(prompt("Enter a number "))
-// console.log((n&(n-1))==0 ? "yes" :" no")
+let prompt=require("prompt-sync")()
+let n=Number(prompt("Enter a number "))
+console.log((n&(n-1))==0 ? "yes" :" no")
 
