@@ -307,3 +307,56 @@
 //     return -1
 // }
 
+// merge two sorted arrays
+
+// let arr1=[2,4,5]
+// let arr2=[1,4,7]
+// let ans=new Array(arr1.length+arr2.length);
+// let i=0,j=0,k=0;
+// while(i<arr1.length&&j<arr2.length){
+//     if(arr1[i]<arr2[j]){
+//         ans[k++]=arr1[i++]
+//     }
+//     else{
+//         ans[k++]=arr2[j++]
+//     }
+// }
+// while(i<arr1.length){
+//     ans[k++]=arr1[i++]
+// }
+// while(j<arr2.length){
+//     ans[k++]=arr2[j++]
+// }
+// console.log(ans)
+
+// merging to sorted arrays without using another array
+
+// let arr1=[1,2,3,0,0,0]
+// let arr2=[2,5,6]
+// let n=3,m=3
+// let i=n-1,j=m-1,k=arr1.length-1
+// while(i>=0 && j>=0){
+//     if(arr1[i]>arr2[j]){
+//         arr1[k--]=arr1[i--]
+//     }
+//     else{
+//         arr1[k--]=arr2[j--]
+//     }
+// }
+// while(j>=0){
+// arr1[k--]=arr2[j--]
+// }
+// console.log(arr1)
+
+// remove duplicate elements from a sorted array
+
+// let arr=[0,0,1,1,1,2,2,3,3,4]
+// let j=1;
+// for(let i=0;i<arr.length-1;i++){
+//     if(arr[i+1]!=arr[i]){
+//         arr[j]=arr[i+1];
+//         j++;
+//     }
+// }
+// console.log(j)
+
